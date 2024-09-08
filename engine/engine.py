@@ -31,11 +31,7 @@ class gameobject():
         pass
 
     def update(self):
-        for behaviour in self.updatebehaviours:
-            behaviour.run()
-
-    def applyupdatebehaviour(self,behaviour):
-        self.updatebehaviours.append(behaviour)
+        pass
 
 
 class appearance():
@@ -54,10 +50,3 @@ class position():
         self.x = 0
         self.y = 0
         self.rotation = 0
-
-class behaviour():
-    def __init__(self,func):
-        self.function = func
-
-    def run():
-        pass
